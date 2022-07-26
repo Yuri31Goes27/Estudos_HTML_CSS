@@ -23,16 +23,28 @@
             background-color: gray;
             color: azure;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+
+        }
     </style>
 </head>
 <body>
     <h1>Fazendo uma Tabela Grande </h1>
 
     <table>
+        <caption>População de Bahia e São paulo </caption>
         <thead>
             <tr>
-                <td>Estado</td>
-                <td>População</td>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -48,7 +60,7 @@
         </tbody>
 
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total</th>
             <td>43.00</td>
         </tfoot>
 
